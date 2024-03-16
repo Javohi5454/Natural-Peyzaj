@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="./assets/css/components/lenta.css">
     <link rel="stylesheet" href="./assets/css/components/projects-cards.css">
     <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <link rel="stylesheet" href="./assets/css/components/modal.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<link rel="shortcut icon" href="./assets/images/Logo.svg" type="svg">
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Natural Peyzaj</title>
@@ -35,7 +37,7 @@
                 <li><a href="./pages/projects.html">Проекты</a></li>
             </ul>
 
-            <button class="title" id="open">
+            <button class="title" id="open-modal" onclick="modal.showModal()">
                 Оставить заявку
             </button>
 
@@ -62,7 +64,34 @@
         </div>
     </nav>
     <!-- Navbar -->
-
+    
+    <!-- Modal -->
+    <dialog id="modal">
+        <div class="modal-text">
+            <h2>Обратный звонок</h2>
+            <p>Оставьте заявку, наш оператор свяжется с вами </p>
+        </div>
+        
+        <div class="modal-forms">
+            <div class="modal-forms-input" >
+                <span>ФИО</span>
+                <input type="text">
+            </div>
+            
+            <div class="modal-forms-input">
+                <span>Телефон</span>
+                <input type="text">
+            </div>
+            
+            <span>Нажимая кнопку «Отправить заявку», вы подтверждаете<br> свое согласие на обработку персональных данных</span>
+            
+            <button class="modal-forms-button">
+                Отправить
+            </button>
+        </div>
+    </dialog>
+    <!-- Modal -->
+    
     <!-- Header -->
     <header>
         <div class="banner-content container">

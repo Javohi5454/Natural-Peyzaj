@@ -1,3 +1,12 @@
+// modal 
+const openModal = document.querySelector('#open-modal')
+const modal = document.querySelector('#modal')
+
+console.log(openModal);
+
+modal.onclick = () => dialog.showModal()
+
+// swiper settings
 const swiper = new Swiper('.footer-content__swipper', {
     // Optional parameters
     // direction: 'horizontal',

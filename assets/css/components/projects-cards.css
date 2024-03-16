@@ -38,7 +38,6 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease 0s;
-    overflow: hidden;
     cursor: pointer;
     z-index: 4;
 }

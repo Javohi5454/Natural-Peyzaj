@@ -16,7 +16,6 @@
     object-fit: cover;
     align-items: center; */
     position: relative;
-    overflow: hidden;
     transition: all 0.3s ease 0s;
     overflow: hidden;
     z-index: 4;

@@ -2,10 +2,11 @@ header {
     width: 100%;
     height: 872px;
     background-image: url('../../images/main-banner.png');
-    object-fit: cover;
+    background-size: cover;
     align-items: center;
+    background-position: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
+    background-repeat: no-repeat;
     mix-blend-mode: multiply;
     position: relative;
 }
@@ -89,7 +90,9 @@ h1 {
     width: 100%;
     height: 872px;
     background-image: url('../../images/aboutus-banner.png');
-    object-fit: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     mix-blend-mode: multiply;
@@ -113,7 +116,9 @@ h1 {
     width: 100%;
     height: 872px;
     background-image: url('../../images/OurProjectsUzbekistan.png');
-    object-fit: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
@@ -137,7 +142,9 @@ h1 {
     width: 100%;
     height: 872px;
     background-image: url('../../images/about-swipper.png');
-    object-fit: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
