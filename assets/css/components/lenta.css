@@ -1,0 +1,14 @@
+.lenta {
+    width: 100%;
+    padding: 50px 0;
+    background: var(--green);
+}
+
+.lenta-content h4{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 109%;
+    text-align: center;
+    color: var(--white);
+}

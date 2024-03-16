@@ -1,0 +1,53 @@
+@import 'fonts.css';
+
+:root{
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Playfair Display", sans-serif;
+    --third-family: "Playfair Display SC", sans-serif;
+    --font3: "Roboto Flex", sans-serif;
+    --font4: "Roboto Condensed", sans-serif;
+    --green: #376300;
+    --dark-green: #4D8506;
+    --white: #FFFFFF;  
+    --black: #000000;
+    --other-black: #474747;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: var(--white);
+}
+.container{
+    max-width: 1616px;
+    padding: 0 10px;
+    width: 100%;
+    min-height: 40px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    
+}
+/* animation */
+nav {
+    animation: identifier 2s ease forwards;
+}
+
+/* header,
+.aboutus-banner,
+.our-projects{
+    animation: identifier 2.3s ease forwards;
+} */
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

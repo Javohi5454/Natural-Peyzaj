@@ -1,0 +1,89 @@
+nav {
+ width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 204px;
+    /* height: 97px; */
+    cursor: pointer;
+}
+
+.navbar-nav__links {
+    display: flex;
+    gap: 40px;
+}
+.navbar-nav__links > li > a {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: var(--green);
+    transition: all .4s ease 0s;
+}
+
+.navbar-nav__links > li > a:hover {
+    color: var(--white);
+    background: var(--dark-green);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.title {
+    width: 189px;
+    height: 51px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--green);
+    border: 1px solid var(--green);
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.title:hover {
+    color: var(--white);
+    background: var(--green);
+}
+
+.contact-number {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 220%;
+    text-align: center;
+    color: var(--green);
+}
+.navbar-nav__buttons {
+    display: flex;
+    gap: 15px;
+
+}
+
+.icon-language,
+.icon-call{
+    width: 39px;
+    height: 33px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-language svg path:hover,
+.icon-call svg path:hover {
+    stroke: var(--green);
+    fill: var(--white);
+}
+
+.icon-language svg path,
+.icon-call svg path {
+    transition: all .3s ease 0s;
+}

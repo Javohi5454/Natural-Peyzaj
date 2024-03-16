@@ -1,0 +1,100 @@
+.our-projects-catalog {
+    padding-top: 118px;
+}
+
+.our-projects-catalog__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 77.96px 67.64px;
+}
+
+.our-projects-card{
+    border-radius: 60px;
+    width: 379px;
+    height: 367px;
+    /* background-image: url('../../images/Project\ card-1.png');
+    object-fit: cover;
+    align-items: center; */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.our-projects-card__background{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease 0s;
+    
+}
+
+.our-projects-card > p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 166%;
+    color: #000;
+    position: absolute;
+    bottom: 42px;
+    left: 46px;
+    z-index: 1;
+    transition: all .3s ease 0s; 
+}
+
+.our-projects-card > p > span{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    color: #000;
+}
+/* .out-projects-card:hover > p {
+    bottom: 160px;
+}
+
+.out-projects-cardt:hover .out-projects-card__background{
+    top: 0%;
+} */
+
+/* our-projects-procces */
+
+.our-projects-procces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+.our-projects-procces-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 67px;
+    margin-top: 142px;
+}
+
+.our-projects-procces h2{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 109%;
+    text-align: center;
+    color: var(--dark-green);
+}
+
+.projects-catalog {
+    margin: 98px auto 98px;
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+    background: var(--white);
+}
+
+.projects-catalog:hover{
+    border: 1px solid var(--dark-green);
+    color: var(--white);
+    background: var(--dark-green);
+}

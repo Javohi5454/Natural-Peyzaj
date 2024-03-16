@@ -1,0 +1,36 @@
+.other-projects-turkey{
+    padding: 0;
+}
+
+.other-projects-turkey__h3{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 36px 0 35px 0;
+}
+
+/* .other-projects-turkmenistan{
+    ma
+} */
+
+.other-projects-turkmenistan__h3{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 49px 0 65px 0;
+}
+
+.our-projects-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.other-projects-lastcards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 97.96px;
+}
