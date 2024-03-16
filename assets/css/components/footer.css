@@ -62,7 +62,7 @@ footer {
     background-image: url('../../images/Swipper-elipes.svg');
     object-fit: cover;
     top: 40%;
-    left: -10%;
+    left: -7%;
 }
 .footer-swipper-elipes-2 {
     position: absolute;
@@ -103,6 +103,7 @@ footer {
     display: flex;
     gap: 80px;
     margin-top: 40px;
+    margin-bottom: 50.63px;
 }
 
 .footer-information-1 p,

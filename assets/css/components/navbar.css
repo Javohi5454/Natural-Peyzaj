@@ -16,7 +16,7 @@ nav {
 
 .navbar-nav__links {
     display: flex;
-    gap: 40px;
+    gap: 83px;
 }
 .navbar-nav__links > li > a {
     font-family: var(--font-family);
