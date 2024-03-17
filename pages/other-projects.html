@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../assets/css/components/footer.css">
     <link rel="stylesheet" href="../assets/css/components/our-projects.css">
     <link rel="stylesheet" href="../assets/css/components/other-projects.css">
-    
+    <link rel="stylesheet" href="../assets/css/components/modal.css">
+    <link rel="shortcut icon" href="../assets/images/Logo.svg" type="svg">
 
     <link
   rel="stylesheet"
@@ -31,12 +32,12 @@
             
             <ul class="navbar-nav__links">
                 <li><a href="../index.html">Главная</a></li>
-                <li><a href="../pages/aboutus.html">О нас</a></li>
-                <li><a href="../pages/contacts.html">Контакт</a></li>
-                <li><a href="../pages/projects.html">Проекты</a></li>
+                <li><a href="./aboutus.html">О нас</a></li>
+                <li><a href="./contacts.html">Контакт</a></li>
+                <li><a href="./projects.html">Проекты</a></li>
             </ul>
 
-            <button class="title" id="open">
+            <button class="title" id="open-modal" onclick="modal.showModal()">
                 Оставить заявку
             </button>
 
@@ -46,7 +47,7 @@
                 <!-- <button class="icon-call"><img src="./assets/images/language.svg" alt=""></button> -->
                 
                 
-                <button class="icon-call"><svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="icon-language"><svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="38" height="34" rx="13" fill="#376300" />
                     <path d="M11.478 11.3359H15.0083C15.8091 11.3359 16.4854 11.458 17.0371 11.7021C17.5938 11.9463 18.0161 12.3076 18.3042 12.7861C18.5972 13.2598 18.7437 13.8433 18.7437 14.5366C18.7437 15.0249 18.6436 15.4717 18.4434 15.877C18.248 16.2773 17.9648 16.6191 17.5938 16.9023C17.2275 17.1807 16.7881 17.3882 16.2754 17.5249L15.8799 17.6787H12.562L12.5474 16.5288H15.0522C15.5601 16.5288 15.9824 16.4409 16.3193 16.2651C16.6562 16.0845 16.9102 15.8428 17.0811 15.54C17.252 15.2373 17.3374 14.9028 17.3374 14.5366C17.3374 14.1265 17.2568 13.7676 17.0957 13.46C16.9346 13.1523 16.6807 12.9155 16.334 12.7495C15.9922 12.5786 15.5503 12.4932 15.0083 12.4932H12.8916V22H11.478V11.3359ZM17.7109 22L15.1182 17.166L16.5903 17.1587L19.2197 21.9121V22H17.7109ZM25.3647 20.1689V14.0752H26.7271V22H25.4307L25.3647 20.1689ZM25.6211 18.499L26.1851 18.4844C26.1851 19.0117 26.1289 19.5 26.0166 19.9492C25.9092 20.3936 25.7334 20.7793 25.4893 21.1064C25.2451 21.4336 24.9253 21.6899 24.5298 21.8755C24.1343 22.0562 23.6533 22.1465 23.0869 22.1465C22.7012 22.1465 22.3472 22.0903 22.0249 21.978C21.7075 21.8657 21.4341 21.6924 21.2046 21.458C20.9751 21.2236 20.7969 20.9185 20.6699 20.5425C20.5479 20.1665 20.4868 19.7148 20.4868 19.1875V14.0752H21.8418V19.2021C21.8418 19.5586 21.8809 19.854 21.959 20.0884C22.042 20.3179 22.1519 20.501 22.2886 20.6377C22.4302 20.7695 22.5864 20.8623 22.7573 20.916C22.9331 20.9697 23.1138 20.9966 23.2993 20.9966C23.8755 20.9966 24.332 20.8867 24.6689 20.667C25.0059 20.4424 25.2476 20.1421 25.394 19.7661C25.5454 19.3853 25.6211 18.9629 25.6211 18.499Z" fill="white"/>
                 </svg>
@@ -63,6 +64,43 @@
         </div>
     </nav>
     <!-- Navbar -->
+
+    <!-- Modal -->
+    <dialog id="modal" class="modal">
+
+        <div class="footer-swipper-elipes-2 modal-next-button" id="close-modal">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="white" />
+                <path d="M18 35L29.5 23.5L18 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+        </div>
+
+       <div class="modal-content">
+        <div class="modal-text">
+            <h2>Обратный звонок</h2>
+            <p>Оставьте заявку, наш оператор свяжется с вами </p>
+        </div>
+        
+        <div class="modal-forms">
+            <div class="modal-forms-input" style="margin-bottom: 44px">
+                <span>ФИО</span>
+                <input type="text">
+            </div>
+            
+            <div class="modal-forms-input">
+                <span>Телефон</span>
+                <input type="text">
+            </div>
+            
+            <span>Нажимая кнопку «Отправить заявку», вы подтверждаете<br> свое согласие на обработку персональных данных</span>
+            
+            <button class="modal-forms-button" id="close-modal" >
+                Отправить
+            </button>
+        </div>
+       </div>
+    </dialog>
+    <!-- Modal -->
 
     <!-- Header -->
     <section class="our-projects">
@@ -273,5 +311,7 @@
         </div>
     </footer>
     <!-- Footer -->
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

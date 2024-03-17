@@ -1,11 +1,40 @@
 dialog {
     width: 880px;
     height: 926px;
-    /* height: 100vh; */
-    background: var(--green);
-    z-index: 5;
     margin: auto;
     border: none;
+    background: var(--green);
+    z-index: 100;
+    transition: all .3s ease 0s;
+    position: relative;
+    overflow: auto;
+}
+
+dialog::backdrop{
+    opacity: 0.3;
+    /* background: var(--green); */
+    animation: identifierModal 0.5s ease forwards;
+}
+
+@keyframes modalFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+
+.modal-next-button {
+    position: absolute;
+    top: 50px;
+    right: 62px;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,14 +84,17 @@ dialog {
     line-height: 220%;
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
+    /* justify-content: center; */
+    align-items: center;
 }
+
 
 .modal-forms-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 44px;
+    
 }
 
 .modal-forms-input span{
@@ -72,6 +104,7 @@ dialog {
     line-height: 220%;
     text-align: center;
     color: var(--green);
+
 }
 .modal-forms-input input{
     width: 460px;
@@ -85,6 +118,7 @@ dialog {
     line-height: 220%;
     text-align: center;
     color: var(--black);
+
 }
 
 .modal-forms-button {
@@ -92,4 +126,24 @@ dialog {
     width: 256px;
     height: 65px;
     background: var(--green);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 220%;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 62.55px;
+    border: none;
+    cursor: pointer;
 }
+
+.modal-forms span {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 220%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+

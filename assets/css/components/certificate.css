@@ -1,0 +1,27 @@
+.certificate {
+    
+}
+
+.certificate-content {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    margin-bottom: 122px;
+}
+
+.certificate-content h2{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: var(--dark-green);
+    margin-bottom: 49px;
+}
+
+.certificate-content__imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}

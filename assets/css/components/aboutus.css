@@ -1,0 +1,79 @@
+.banner-information {
+    width: 100%;
+    height: 924px;
+    background-image: url('../../images/top-view-collection-green-leaves-background-восстановлено\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding-top: 90px;
+    position: relative;
+}
+
+.banner-information-content  {
+    display: flex;
+    gap: 20px;
+    /* position: relative; */
+    padding: 0 25px;
+}
+
+.banner-information-content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner-information-content__text p{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 155%;
+    color: #000;
+    width: 776px;
+    
+}
+
+.banner-information-content__text p span{
+    font-weight: 400;
+}
+
+.banner-information-content__img {
+    position: relative;
+}
+
+.banner-information-img-elipes-1 {
+    border-radius: 100%;
+    width: 534px;
+    height: 534px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    /* z-index: 5; */
+}
+.banner-information-img-elipes-2 > img {
+    z-index: 5;
+}
+.banner-information-img-elipes-2,
+.banner-information-img-elipes-3{
+    border-radius: 100%;
+    width: 498px;
+    height: 498px;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-information-img-elipes-3 {
+    position: absolute;
+    width: 386px;
+    height: 386px;
+    top: -50px;
+    left: 240px;
+    /* z-index: 1; */
+}

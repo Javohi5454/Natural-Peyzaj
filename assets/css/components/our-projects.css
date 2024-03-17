@@ -19,6 +19,7 @@
     transition: all 0.3s ease 0s;
     overflow: hidden;
     z-index: 4;
+    cursor: pointer;
 }
 
 .our-projects-card__background{
@@ -52,13 +53,14 @@
     line-height: 166%;
     color: #000;
 }
-/* .out-projects-card:hover > p {
+.our-projects-card:hover > p {
     bottom: 160px;
 }
 
-.out-projects-cardt:hover .out-projects-card__background{
+.our-projects-card:hover .projects-card-content__background{
     top: 0%;
-} */
+    /* background: red; */
+}
 
 /* our-projects-procces */
 

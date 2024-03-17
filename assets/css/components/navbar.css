@@ -77,13 +77,31 @@ nav {
     cursor: pointer;
 }
 
+.icon-language svg path,
+.icon-call svg path {
+    transition: all .3s ease 0s;
+}
+
 .icon-language svg path:hover,
 .icon-call svg path:hover {
     stroke: var(--green);
     fill: var(--white);
 }
 
-.icon-language svg path,
-.icon-call svg path {
-    transition: all .3s ease 0s;
+
+/* responsive */
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 357px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    nav{
+        width: 100%;
+    }
+    .navbar-nav {
+        display: flex;
+    }
 }
